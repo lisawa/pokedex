@@ -1,0 +1,10 @@
+.leftList{
+    background-color:#828282;
+    color:#FFFFFB;
+    padding:3px;
+}
+
+.leftList:hover{
+    color:#828282;
+    background-color:#FFFFFB;
+}

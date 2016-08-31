@@ -1,7 +1,15 @@
 
-<div style="height:100%; width:100%;">
-  <hexagonal [HP]="HP" [Atk]="Atk" [Def]="Def" [Spd]="Spd" [SpAtk]="SpAtk" [SpDef]="SpDef"></hexagonal> 
-  <div>
-    <button (click)="Rnd()">HP+10</button>
+<div style="height:100%; width:10%; float:left;">
+  <div style="height:100px; width:100%;"> </div>
+  <div class="leftList" *ngFor="let m of pmList" (click)="SelectPM(m)">{{m.No}}-{{m.Name}}</div>
+</div>
+<div style="width: 250px; float:left; background-color:red;">
+  <div style="height:50px;  text-align:center; color:#81C7D4;">
+      <span>{{PMNo}} - {{PMName}}</span>
+      <span>{{Type1}}</span>
+      <span *ngIf="Type2!=''"> - {{Type2}}</span>
+  </div>
+  <div style="height:250px; ">
+    <hexagonal [HP]="HP" [Atk]="Atk" [Def]="Def" [Spd]="Spd" [SpAtk]="SpAtk" [SpDef]="SpDef"></hexagonal>
   </div>
 </div>

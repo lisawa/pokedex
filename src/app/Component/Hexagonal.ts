@@ -36,7 +36,6 @@ import { IndividualValues } from '../Model/IndividualValues';
 })
 
 export class HexagonalComponent{
-    @Input() iv: IndividualValues;
     @Input() HP:number;
     @Input() Atk:number;
     @Input() Def:number;
